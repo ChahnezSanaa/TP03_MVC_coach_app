@@ -1,6 +1,6 @@
 # Application Android de Calcul d'Indice de Masse Grasse (IMG)
 
-Cette application Android simple permet de calculer l'Indice de Masse Grasse (IMG), aussi appelé taux de graisse corporelle. L'application prend en compte le poids, la taille, l'âge et le genre de l'utilisateur pour effectuer le calcul. Elle offre également des options de persistance des données à travers SharedPreferences et SQLite.
+Cette application Android simple permet de calculer l'Indice de Masse Grasse (IMG), aussi appelé taux de graisse corporelle. L'application prend en compte le poids, la taille, l'âge et le genre de l'utilisateur pour effectuer le calcul. Elle offre également des options de persistance des données à travers Serialize et SQLite.
 
 ## Fonctionnalités
 
@@ -10,7 +10,7 @@ Cette application Android simple permet de calculer l'Indice de Masse Grasse (IM
     *   **Affichage du résultat :** Affiche le résultat de l'IMG à l'utilisateur dans un TextView ou un élément d'interface similaire, avec une interprétation possible (par exemple, "Faible", "Normal", "Elevé").
 
 *   **Persistance des Données :**
-    *   **SharedPreferences :** Utilise les SharedPreferences d'Android pour enregistrer les informations de l'utilisateur (données saisies et résultats) de manière simple et rapide afin de les récupérer lors des prochaines utilisations de l'application.
+    *   **Serialize :** Utilise les Serialize d'Android pour enregistrer les informations de l'utilisateur (données saisies et résultats) de manière simple et rapide afin de les récupérer lors des prochaines utilisations de l'application.
     *   **SQLite :** Utilise une base de données SQLite pour enregistrer et récupérer les informations de l'utilisateur, offrant une option de stockage plus structurée, persistante et évolutive.
          * Les données sont stockés dans une table `user_data` avec les colonnes suivantes : `id` (entier, clé primaire), `weight` (réel), `height` (réel), `age` (entier), `gender` (texte), `img` (réel) et `date_time` (texte).
 
@@ -25,7 +25,7 @@ Cette application Android simple permet de calculer l'Indice de Masse Grasse (IM
 4.  **Consulter le résultat** :
     Le résultat du calcul (votre IMG) s'affichera à l'écran.
 5.  **Persistance des données :** les données saisies et calculées sont automatiquement sauvegardées de deux façons pour une utilisation ultérieure :
-    *   Via **SharedPreferences** pour une persistence simple.
+    *   Via **Serialize** pour une persistence simple.
     *   Via **SQLite** pour une persistence plus structurée et évolutive.
 
 ## Organisation du Projet
