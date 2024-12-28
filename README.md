@@ -28,6 +28,4 @@ Cette application Android simple permet de calculer l'Indice de Masse Grasse (IM
     *   Via **Serialize** pour une persistence simple.
     *   Via **SQLite** pour une persistence plus structurée et évolutive.
 
-## Organisation du Projet
 
-Voici une structure de projet Android typique (adaptée à un projet Java/Kotlin) :
